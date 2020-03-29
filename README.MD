@@ -212,9 +212,11 @@ Exemple :
         jsonRequest.doPost(); //or
         jsonRequest.doGet(); //or
         jsonRequest.doRequest(); //or 
-			```
+```
+
 you can use it with `Kotlin` language with Android 
 Example :
+
 ```kotlin
         var req = JsonRequest("http://armane.studio/apiconsumer/params")
                 .onFinish {
