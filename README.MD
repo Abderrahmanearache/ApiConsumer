@@ -1,4 +1,4 @@
-<span style="color: Green;font-size: 15pt ; font-family: Sans-serif; ">**Api Consumer**</span> by [<span style="color: red; font-size: 15pt; font-family: consolas;text-decoration: none">*Armane*</span>](http://armane.studio "Armane")
+<span style="color: Green;font-size: 17pt ; font-family: Sans-serif; ">**Api Consumer**</span> by [<span style="color: red; font-size: 18pt; font-family: consolas ">*Armane*</span>](http://armane.studio "Armane")
  
 **Using API Consumer with Java, Android & Kotlin**
 
