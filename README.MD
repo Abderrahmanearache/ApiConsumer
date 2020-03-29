@@ -36,8 +36,8 @@ To get a Git project into your build:
 
 	
 <br/> 
-------------
 
+------------
 ##******With Maven****** 
 <br/>
 you can use this API also with Maven Repository 
