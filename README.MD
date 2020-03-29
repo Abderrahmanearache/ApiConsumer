@@ -7,6 +7,7 @@
 The API Consumer is a tool that can consumer the API Provider perfectly in Java and kotlin based applications.
 To use the API Consumer visit  and follow the instructions.
  
+------------
  ##******With Gradle******
  <br/>
  you can use this API with Gradle (**Android** Or **Desktop** or **Web**).
@@ -35,6 +36,7 @@ To get a Git project into your build:
 
 	
 <br/> 
+------------
 
 ##******With Maven****** 
 <br/>
@@ -151,7 +153,8 @@ to send parameters to your API, using GET or POST:
 ```
 if you want use `addJsonParam` ,make sure  you use the doRequest method, the data goes at input to your api,
 ***to read it in your servier side :*** 
-+- **java servlet**  >> use` request.getReader()`
+ <br/>
++- **java servlet**  >> use` request.getReader()` <br/>
 +- **PHP** >>use `file_get_contents('php://input')` 
 
 ------------
@@ -209,5 +212,4 @@ Exemple :
         jsonRequest.doPost(); //or
         jsonRequest.doGet(); //or
         jsonRequest.doRequest(); //or 
-		```
- 
+	
