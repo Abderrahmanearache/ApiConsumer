@@ -8,6 +8,7 @@ The API Consumer is a tool that can consumer the API Provider perfectly in Java 
 To use the API Consumer visit  and follow the instructions.
  
  ##******With Gradle******
+ <br/>
  you can use this API with Gradle (**Android** Or **Desktop** or **Web**).
  
 To get a Git project into your build:
@@ -35,7 +36,8 @@ To get a Git project into your build:
 	
 <br/> 
 
-##******With Maven******
+##******With Maven****** 
+<br/>
 you can use this API also with Maven Repository 
  
 To get a Git project into your Maven Project:
