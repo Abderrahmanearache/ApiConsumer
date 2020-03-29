@@ -89,12 +89,11 @@ to get a simple String data from an API, using a StringRequest :
 
 at the end, you get a `StringResponse` which contains a` getResponse` function returns a string value as below
 
-  ```java
-	StringRequest sRequest = new StringRequest("http://armane.studio/apiconsumer/params")
-		.onFinish(response -> {
+  ```java 
+         StringRequest sRequest = new StringRequest("http://armane.studio/apiconsumer/params")
+                .onFinish(response -> {
                     System.out.println(response.getResponse());
-		});
-```
+                });
 
 ------------
 
