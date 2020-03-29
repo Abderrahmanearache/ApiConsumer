@@ -212,4 +212,22 @@ Exemple :
         jsonRequest.doPost(); //or
         jsonRequest.doGet(); //or
         jsonRequest.doRequest(); //or 
-	
+			```
+you can use it with `Kotlin` language with Android 
+Example :
+```kotlin
+        var req = JsonRequest("http://armane.studio/apiconsumer/params")
+                .onFinish {
+            		jsonResponse -> Log.d("json", jsonResponse.jsonObject.toString())
+        		}
+                .onError {
+                    exception -> exception.printStackTrace()
+                }
+                .addParams(arrayOf(
+                        arrayOf("key", "val"),
+                        arrayOf("key2", "val2")
+                ))
+        req.doGet()
+
+ ```
+ 
