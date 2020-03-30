@@ -30,7 +30,7 @@ To get a Git project into your build:
 
 ```groovy
 	dependencies {
-	        implementation 'com.github.Abderrahmanearache:ApiConsumer:1.0'
+	        implementation 'com.github.Abderrahmanearache:ApiConsumer:1.1'
 	} 
 ```
 
@@ -63,7 +63,7 @@ To get a Git project into your Maven Project:
 	<dependency>
 	    <groupId>com.github.Abderrahmanearache</groupId>
 	    <artifactId>ApiConsumer</artifactId>
-	    <version>1.0</version>
+	    <version>1.1</version>
 	</dependency>
 ```
  
