@@ -1,10 +1,10 @@
-**Api Consumer** by [<span style="color: red; font-size: 18pt; font-family: consolas ">*Armane*</span>](http://armane.studio "Armane")
+**Api Consumer** by [<span style="color: red; font-size: 18pt; font-family: consolas">*Armane*</span>](http://armane.studio "Armane")
  
 **Using API Consumer with Java, Android & Kotlin**
 
 #  Implimentation 
 
-The API Consumer is a tool that can consumer the API Provider perfectly in Java and kotlin based applications.
+The API Consumer is a tool that can be used perfectly to make http request in Java and kotlin applications.
 To use the API Consumer visit  and follow the instructions.
  
 ------------
@@ -148,10 +148,26 @@ to send parameters to your API, using GET or POST:
         sRequest.addJsonParam(new Object() {
             String name1 = "value1";
             String name2 = "value2";
+            Object object = new Object() {
+                        String name = "name";
+                        String job = "job";   
+               }; 
         });
         sRequest.doRequest();        
 ```
-if you want use `addJsonParam` ,make sure  you use the doRequest method, the data goes at input to your api,
+
+this method parse the object and stringify it as bellow :
+```json
+{
+   "name1":"value1",
+   "name2":"value2",
+   "object":{
+      "name":"name",
+      "job":"job"
+   }
+}
+```
+if you want use `addJsonParam`, make sure  you use the doRequest method, the json data goes at input to your api,
 ***to read it in your servier side :*** 
  <br/>
 +- **java servlet**  >> use` request.getReader()` <br/>
@@ -186,20 +202,24 @@ the JsonRequest has the **same** functions as StringRequest, the only diferent i
 Exemple : 
 ```java
 
-        HashMap<String, String> params = new HashMap<>();
-        params.put("name1", "value1");
-        params.put("name2", "value2");
+        HashMap<String, String> hashParam = new HashMap<>();
+        hashParam.put("name1", "value1");
+        hashParam.put("name2", "value2");
 
         JsonRequest jsonRequest = new JsonRequest("http://armane.studio/apiconsumer/params")
-                .addJsonParam(params)
+                .addParams(hashParam)
                 //or
                 .addParams(new String[][]{
                         {"name1", "value1"},
                         {"name2", "value2"},
                 })
                 .addJsonParam(new Object() {
-                    String name1 = "value1";
+                    String param1 = "value1";
                     String name2 = "value2";
+                    Object object = new Object() {
+                    		String name = "name";
+                    		String job = "job";   
+                   }; 
                 })
                 //or
                 .onFinish(jsonResponse -> {
