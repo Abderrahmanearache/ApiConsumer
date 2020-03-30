@@ -207,12 +207,13 @@ Exemple :
         hashParam.put("name2", "value2");
 
         JsonRequest jsonRequest = new JsonRequest("http://armane.studio/apiconsumer/params")
-                .addParams(hashParam)
+        jsonRequest.addParams(hashParam)
                 //or
                 .addParams(new String[][]{
                         {"name1", "value1"},
                         {"name2", "value2"},
                 })
+		//or
                 .addJsonParam(new Object() {
                     String param1 = "value1";
                     String name2 = "value2";
@@ -220,8 +221,7 @@ Exemple :
                     		String name = "name";
                     		String job = "job";   
                    }; 
-                })
-                //or
+                }) 
                 .onFinish(jsonResponse -> {
                     if (jsonResponse.isJson())
                         System.out.println(jsonResponse.getJsonObject().get("keyFromYourJsonResult"));
