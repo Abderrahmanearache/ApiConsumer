@@ -2,7 +2,7 @@
  
 **Using API Consumer with Java, Android & Kotlin**
 
-#  Implimentation 
+#  Implementation 
 
 The API Consumer is a tool that can be used perfectly to make http request in Java and kotlin applications.
 To use the API Consumer visit  and follow the instructions.
